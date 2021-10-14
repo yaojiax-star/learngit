@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>正则表达式之search() 方法使用正则表达式</title>
+</head>
+<body>
+
+<p>搜索字符串 "runoob", 并显示匹配的起始位置：</p>
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+	var str = "woshis yaojiaxing!";
+	var n = str.search(/yaojiaxing/i);//正则搜索字符串 i 不区分大小写
+	//var n = srt.search("yaojiaxing");//search 方法可使用字符串作为参数。字符串参数会转换为正则表达式
+	
+	document.getElementById("demo").innerHTML = n;
+}
+</script>
+</body>
+</html>
